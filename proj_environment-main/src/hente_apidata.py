@@ -2,10 +2,6 @@ import os
 import requests
 import pandas as pd
 
-#slik at csv filen skal lagres i rikig mappe (data)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, "data")
-
 from variabler import client_id, stasjon_id, elementer, tidsperioder
 
 def hent_solskinnstimer(element, periode, filnavn):
@@ -36,17 +32,13 @@ def lagreCSV(data, filnavn):
             "sunshine_hours": item["observations"][0]["value"]
         })
 
-    if lagret:  # Hvis det er data tilgjengelig
-        # Lagre dataene i en pandas DataFrame
+    if lagret:  
         df = pd.DataFrame(lagret)
         
-        # Bygg filbanen til 'data' mappen
         filename = os.path.join(os.path.dirname(__file__), '..', 'data', filnavn)
-        
-        # Sørg for at mappen eksisterer, hvis ikke, lag den
+
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         
-        # Lagre DataFrame som en CSV-fil
         df.to_csv(filename, index=False)
         print(f" Rådata lagret: {filename}")
     else:
