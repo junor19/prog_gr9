@@ -1,0 +1,7 @@
+import pandas as pd
+import numpy as np
+
+import hente_apidata
+
+df =pd.read_csv('raa_data_d.csv')
+print(df.isnull())
