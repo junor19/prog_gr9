@@ -12,7 +12,7 @@ class testmonth(unittest.TestCase):
             reader = csv.reader(csvfile)
             for row in reader:
                 date = datetime.strptime(date_string,"2020-01-01")
-        year = 
+        year = 2020
         forventet_dato = datetime(2020,10,10)
         self.assertIn(forventet_dato, hente_apidata)
         

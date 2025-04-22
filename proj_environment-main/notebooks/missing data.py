@@ -13,4 +13,4 @@ hente_apidata.hent_solskinnstimer("t_månder","seksten", "raa_data_m.csv")
 df =pd.read_csv(os.path.join(os.path.dirname(__file__),'..', 'data', 'raa_data_m.csv'))
 
 
-print(df.isnull().sum())
+print(df.isnull().sum()) #summerer antal som mangler verdi
