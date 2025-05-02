@@ -10,6 +10,6 @@ elementer = {
 }
     
 tidsperioder = {
-    "seksten": "2016-01-01/2020-01-01",  #for stasjon gløshaugen var det tilgjengelig data fra og med 2016, så det er der vi starter
+    "seksten": "2016-01-01/2021-01-01",  #for stasjon gløshaugen var det tilgjengelig data fra og med 2016, så det er der vi starter
     "tjue": "2020-01-01/2021-01-01",  #for å få et sett ukomplett data har vi også hentet inn data fra 2020-2021 men i timer/døgnet ikke timer/månden
 }
