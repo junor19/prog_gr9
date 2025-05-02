@@ -2,9 +2,6 @@ import matplotlib.pyplot as plt
 import sys
 import os
 
-sys.path.append(os.path.join(os.path.dirname(__file__),'../src'))
-#sys.path.append(src_path)
-
 import hente_apidata
 import variabler
 
