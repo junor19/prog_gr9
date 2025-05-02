@@ -1,19 +1,14 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+import os
 
 import hente_apidata
 import variabler
 
-#fig, axs = plt.subplots(1,3, figsize=(9,3), sharey=True)
+hente_apidata.hent_solskinnstimer("t_dager", "tjue", "raa_data_d.csv")
+df_d =pd.read_csv(os.path.join(os.path.dirname(__file__),'..','data', 'raa_data_d.csv'))
 
+data = pd.read_csv("hente_apidata")
 
-#axs[2].plot(t_dager,seksten)
-#fig.suptitle('solskinnstimer')
-
-#ypoints = np.array(['t_månder', 'seksten'])
-
-xpoints = np.array(['seksten'])
-ypoints = np.array(['t_månder'])
-
-plt.plot(ypoints, color = 'r')
-plt.show()
+print(data.head())
