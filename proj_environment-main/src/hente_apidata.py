@@ -44,12 +44,14 @@ def lagreCSV(data, filnavn):
     else:
         print(" Ingen data tilgjengelig for lagring.")
 
+
+# til terminal: python proj_environment-main\src\hente_apidata.py
 '''   
 for å opprette data med terminal
 if __name__ == "__main__":
-    hent_solskinnstimer("t_månder", "seksten", "raa_data_m")
+    hent_solskinnstimer("t_månder", "seksten", "raa_data_m.csv")
+'''
 
 if __name__ == "__main__":
-    hent_solskinnstimer("t_dager", "tjue", "raa_data_d")
+    hent_solskinnstimer("t_dager", "seksten", "raa_data_d.csv")
     
-''' 
