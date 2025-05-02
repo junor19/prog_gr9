@@ -1,0 +1,17 @@
+# Ignorer virtuelle miljøer
+venv/
+
+# Ignorer Python-kompilerte filer
+__pycache__/
+*.py[cod]
+
+# Ignorer miljøfiler
+.env
+
+# Ignorer editor-konfigurasjon
+.vscode/
+.idea/
+
+# Ignorer OS-spesifikke filer
+.DS_Store
+Thumbs.db
