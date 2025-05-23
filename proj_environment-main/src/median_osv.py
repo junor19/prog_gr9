@@ -17,12 +17,6 @@ if __name__ == "__main__":
     
     filbane = os.path.join(os.path.dirname(__file__),'..', 'data', 'raa_data_d.csv')# lager filbane
     median, gjennomsnitt, standardavvik = statistikk(filbane) #kaller på funksjonen og sender inn filbane
-=======
-    df_d =pd.read_csv(filnavn)
-    median = df_d.median(numeric_only=True)
-    gjennomsnitt = df_d.mean(numeric_only=True)
-    standardavvik = df_d.std(numeric_only=True)
-    return median, gjennomsnitt, standardavvik
 
 if __name__ == "__main__":
     import hente_apidata
