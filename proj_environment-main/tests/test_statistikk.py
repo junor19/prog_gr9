@@ -3,9 +3,8 @@ import pandas as pd
 import sys
 import os
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 import median_osv
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 from median_osv import statistikk
 
 class test_statistikk(unittest.TestCase):
@@ -21,15 +20,15 @@ class test_statistikk(unittest.TestCase):
         os.remove(self.filnavn)
     
     def test_median(self):
-        median, _, _ = statistikk(self.test_fil)
+        median, _, _ = statistikk(self.filnavn)
         self.assertEqual(median[self.kolonnenavn], 5)
         
     def test_gjennomsnitt(self):
-        _, gjennomsnitt, _ = statistikk(self.test_fil)
+        _, gjennomsnitt, _ = statistikk(self.filnavn)
         self.assertNotEqual(gjennomsnitt[self.kolonnenavn], 9)
         
     def test_standardavvik(self):
-        _, _, standardavvik = statistikk(self.test_fil)
+        _, _, standardavvik = statistikk(self.filnavn)
         self.assertNotEqual(standardavvik[self.kolonnenavn], 0)
         
     
