@@ -10,3 +10,12 @@ hente_apidata.hent_solskinnstimer("t_dager", "tjue", "raa_data_d.csv")
 df_d =pd.read_csv(os.path.join(os.path.dirname(__file__),'..','data', 'raa_data_d.csv'))
 
 print(df_d.isnull().sum()) #summerer og sjekker manglende verdier
+
+def manglende_dager(måne):
+    dager = list(range(1,32))
+    
+    if dager in df:
+        print("alt ok")
+    else:
+        print("dager mangler")
+    return(måne)
