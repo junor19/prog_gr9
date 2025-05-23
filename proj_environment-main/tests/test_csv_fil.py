@@ -4,20 +4,24 @@ import os
 import sys
 
 # Legg til src-mappen i path 
-sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), '../src')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
 import hente_apidata
 
 # Sett riktig filsti til CSV-filen (samme som i hente_apidata)
-DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../src','data', 'raa_data_d.csv'))
+DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'raa_data_d.csv'))
+
 
 class TestCSV(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        data_dir = os.path.dirname(DATA_PATH)
+        os.makedirs(data_dir, exist_ok=True)
         # Kjør API-kall én gang før alle testene
         hente_apidata.hent_solskinnstimer("t_månder", "tjue", "raa_data_d.csv")
 
     def test_exists(self):
+        
         self.assertTrue(os.path.exists(DATA_PATH), f"Filen {DATA_PATH} finnes ikke.")
 
     def test_csv_header(self):
