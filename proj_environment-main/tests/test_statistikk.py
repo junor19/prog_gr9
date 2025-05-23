@@ -4,8 +4,8 @@ import sys
 import os
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-import median_osv
-from median_osv import statistikk
+import sentralmal
+from sentralmal import statistikk
 
 class test_statistikk(unittest.TestCase):
     def setUp(self):
@@ -19,15 +19,15 @@ class test_statistikk(unittest.TestCase):
     def tearDown(self):
         os.remove(self.filnavn)
     
-    def test_median(self):
+    def test_median(self): #sjekker at median funksjonen fungerer
         median, _, _ = statistikk(self.filnavn)
         self.assertEqual(median[self.kolonnenavn], 5)
         
-    def test_gjennomsnitt(self):
+    def test_gjennomsnitt(self): #sjekker at gjennomsnitt funksjonen fungerer
         _, gjennomsnitt, _ = statistikk(self.filnavn)
         self.assertNotEqual(gjennomsnitt[self.kolonnenavn], 9)
         
-    def test_standardavvik(self):
+    def test_standardavvik(self): #sjekker at standardavvik funksjonen fungerer
         _, _, standardavvik = statistikk(self.filnavn)
         self.assertNotEqual(standardavvik[self.kolonnenavn], 0)
         
