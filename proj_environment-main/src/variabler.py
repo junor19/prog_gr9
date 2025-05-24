@@ -1,7 +1,4 @@
-#API-nøkkel som bør ligge i et annet doc
-client_id = "bd3f25c0-324e-4a26-a507-5887be8b3c9d"
-
-''' fra 
+#kodelinje 1-13 hentet rett fra jupyter bok: Using API to collect data
 import requests
 import os
 from dotenv import load_dotenv
@@ -14,8 +11,6 @@ api_key = os.getenv('API_KEY')
 
 if api_key is None:
     raise ValueError("API key not found in environment variables.")
-    
-'''
 
 #variablene
 stasjon_id = "SN68173"  #stasjons-id for gløs
