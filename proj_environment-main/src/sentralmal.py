@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import sys
 import os
+import csv
+
 
 def statistikk(filnavn):
 
@@ -12,10 +14,8 @@ def statistikk(filnavn):
     return median, gjennomsnitt, standardavvik #returnerer median, gjennomsnitt og standardavvik 
 
 if __name__ == "__main__":
-    import hente_apidata
-    hente_apidata.hent_solskinnstimer("t_månder", "tjue", "utfylt_data.csv") #henter data fra API
     
-    filbane = os.path.join(os.path.dirname(__file__),'..', 'data', 'utfylt_data.csv')# lager filbane
+    filbane = os.path.join(os.path.dirname(__file__),'..', 'data', 'utfylt_data.csv')# lager filbane til csv-filen
     median, gjennomsnitt, standardavvik = statistikk(filbane) #kaller på funksjonen og sender inn filbane
     print("median er:", median) #summerer median
     print("gjennomsnittet er:", gjennomsnitt) # summerergjennomsnittet
