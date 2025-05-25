@@ -13,22 +13,22 @@ DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'
 
 
 class TestCSV(unittest.TestCase):
-    @classmethod
+    @classmethod #gjør att det kjøres en gang før alle testene
     def setUpClass(cls):
-        data_dir = os.path.dirname(DATA_PATH)
-        os.makedirs(data_dir, exist_ok=True)
+        data_dir = os.path.dirname(DATA_PATH) #
+        os.makedirs(data_dir, exist_ok=True) #lager mappen hvis den ikke finnes
         # Kjør API-kall én gang før alle testene
         hente_apidata.hent_solskinnstimer("t_månder", "tjue", "raa_data_d.csv")
 
     def test_exists(self):
-        
+        # Sjekk at filen finnes
         self.assertTrue(os.path.exists(DATA_PATH), f"Filen {DATA_PATH} finnes ikke.")
 
-    def test_csv_header(self):
+    def test_csv_header(self):#sjekker headeren i CSV-filen
         with open(DATA_PATH, 'r', newline='', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
             header = next(reader)
-            self.assertEqual(header, ['date', 'sunshine_hours'], "CSV-header er feil.")
+            self.assertEqual(header, ['date', 'sunshine_hours'], "CSV-header er feil.") #sjekker at er lik
 
 if __name__ == "__main__":
     unittest.main()
