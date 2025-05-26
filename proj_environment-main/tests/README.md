@@ -18,3 +18,5 @@ For testfilen man øsnker å teste, fyller man det inn hvor det står 'filen_som
 ### Testene
 Testene som er brukt er i stor grad positive tester som tester om funksjonen fungerer som forventet, det er lagt inn en negativ test i test_mangel_duplikat.py som tester om funksjonen finner feiltilstander i dataene.
 
+[tilbake til README](../README.md)
+

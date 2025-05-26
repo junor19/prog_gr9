@@ -18,4 +18,8 @@ Disse filene brukes for å hente data fra kilden som vi ha bestemt oss for å br
 Det er filer for visualisering av dataene i CSV filene som er blitt brukt til å visualisere med bruk av bibliotekerr som Matplotlib og Seaborn for å lage søyle og linjediagrammer. Samt filer for å regne ut statistikk som median, gjennomsnitt og standardavvik som blir brukt i andre filer.
 
 ### For å se dem 
-For  å se disse i bruk kan du gå til [Del 1] og/eller [Del 2]
+
+For  å se disse i bruk kan du gå til [Del 1](../notebooks/del1.ipynb) og/eller [Del 2](../notebooks/del2.ipynb)
+
+[tilbake til README](../README.md)
+
