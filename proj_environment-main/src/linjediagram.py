@@ -47,5 +47,5 @@ if __name__ == "__main__":
         df, 
         median=median['sunshine_hours'],
         gjennomsnitt=gjennomsnitt['sunshine_hours']
-    )
+    ) # lager grafen med median og gjennomsnitt
     
