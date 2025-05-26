@@ -58,5 +58,7 @@ Matplotlib. (n.d.-a). *Matplotlib constrained layout quide.* www.matplotlib.org.
 Geeksforgeeks. (n.d.-a). *Geeksforgeeks linechart in Matplotlib-Python.* www.Geeksforgeeks.org. https://www.geeksforgeeks.org/line-chart-in-matplotlib-python/
 
 openAI(n.d.-a). *Chatgpt (GPT-4).* https://chatgpt.com/
+
+Python. (n.d.-a). *Python matplotlib line linestyle.* www.python.org. https://www.w3schools.com/python/matplotlib_line.asp
 '''
     
