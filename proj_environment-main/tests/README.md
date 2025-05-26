@@ -4,6 +4,7 @@ Målet med unittestene er å sjekke om funksjonene som er lagt fungerer som de s
 
 **Testmappen inneholder**
 |Navn                      |Tester til mappen           |
+|--------------------------|----------------------------|
 |test_csv.py               |tester til hente_apidata.py |
 |test_inj_reg.py           |tester til linjaer_reg.py   |
 |test_linjediagram.py      |tester til linjediagram.py  |
