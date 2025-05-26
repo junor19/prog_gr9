@@ -33,3 +33,9 @@ class test_statistikk(unittest.TestCase):
         
 if __name__ == "__main__":
     unittest.main()
+
+'''
+Python. (n.d.-a). *Python unittest.* www.python.org. https://docs.python.org/3/library/unittest.html
+
+openAI(n.d.-a). *Chatgpt (GPT-4).* https://chatgpt.com/
+'''
