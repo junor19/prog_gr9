@@ -9,7 +9,6 @@ from sentralmal import statistikk
 # Forbereder og laster inn data fra CSV-fil
 def laste_data():
     path = os.path.join(os.path.dirname(__file__), '..', 'data', 'utfylt_data.csv') #filsti til csv
-    #path = os.path.normpath(path) #rydder stien sjekker at det er rett format
     df = pd.read_csv(path) #leser csv filen
     df['date'] = pd.to_datetime(df['date']) #konverterer datoen til datetime format
     df['year'] = df['date'].dt.year #henter ut året fra datoen og legger i egen kolonne
