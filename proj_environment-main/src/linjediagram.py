@@ -49,3 +49,16 @@ if __name__ == "__main__":
         gjennomsnitt=gjennomsnitt['sunshine_hours']
     ) # lager grafen med median og gjennomsnitt
     
+    
+'''
+Matplotlib. (n.d.-a). *matplotlib Plotting categorical variables.* www.matplotlib.org. https://matplotlib.org/stable/gallery/lines_bars_and_markers/categorical_variables.html#sphx-glr-gallery-lines-bars-and-markers-categorical-variables-py
+
+Matplotlib. (n.d.-a). *Matplotlib constrained layout quide.* www.matplotlib.org. https://matplotlib.org/stable/users/explain/axes/constrainedlayout_guide.html    
+
+Geeksforgeeks. (n.d.-a). *Geeksforgeeks linechart in Matplotlib-Python.* www.Geeksforgeeks.org. https://www.geeksforgeeks.org/line-chart-in-matplotlib-python/
+
+openAI(n.d.-a). *Chatgpt (GPT-4).* https://chatgpt.com/
+
+Python. (n.d.-a). *Python matplotlib line linestyle.* www.python.org. https://www.w3schools.com/python/matplotlib_line.asp
+'''
+    
