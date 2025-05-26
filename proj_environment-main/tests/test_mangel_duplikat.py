@@ -25,7 +25,7 @@ class test_finne_hull(unittest.TestCase):
             os.remove(self.testfile)    #fjerner testfilen etter at testen er kjørt
     
     def test_finne_hull(self):
-        duplikater, manglende_datoer = finne_hull(self.testfile, 'date')
+        duplikater, manglende_datoer = finne_hull(self.testfile, 'date') #kobler til funksjonen som skal testes
         self.assertEqual(len(duplikater), 1) #sjekker at det er 1 duplikat
         self.assertEqual(len(manglende_datoer), 1) #sjekker at det er 1 manglende dato
 
