@@ -1,4 +1,4 @@
-det som vi har brukt
+Programmer som vi har installert for å kjøre prosjektet vårt.
 
 asttokens==3.0.0
 certifi==2025.1.31
