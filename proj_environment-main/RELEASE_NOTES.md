@@ -27,8 +27,6 @@ Prosjektet henter inn data kilden MET (meterologiske institutt) og gjennomgår f
 
 Dette kan brukes for klima og væranalyser og kan brukes for turisme og fritid og landbruk, over når det ermest sol på året og mulighet for å planlegge frami tid i forhold til hvor lenge og langt ut på året det vil kunne være sol.
 
-### Author
 
-- Changes made by Majid Rouhani
 
 
