@@ -1,25 +1,36 @@
-# Project
+# Miljøanalyse prosjekt 
 
-The course has portfolio assessment which forms the basis for the grade in the subject. Portfolio assessment is based on the work you do in your project. The project should be solved in groups, and it is sufficient for one person in the group to submit the answer in Blackboard. When you have solved all the tasks, upload the entire answer as one zip file in BB. The zip file should contain the entire project directory, including all source code, .git directory, etc. It is important that you include the .git directory (an "invisible" directory in the root directory of your project) because it contains your version history. You will receive written feedback on what you have submitted in BB, and you can make improvements to the code right up until the final portfolio submission.
+Målet med dette prosjektet er å utvikle en applikasjon som henter, analyserer og visualiserer miljødata fra åpne kilder. Vi har valgt ut, kjørt og tilpasset prosjektet til et datasett, men funksjonene kan brukes utover dette.
 
-
-The project is divided into the following parts:
-
-1. General Part: Background information about the project and tasks that are common to all parts.
-2. Portfolio Part 1: Focuses on data collection and preparation.
-3. Portfolio Part 2: Focuses on data analysis and visualization.
-
-Final project has to be delivered in Inspera for assessment. The grading scale is A-F.
-
-```{Note}
-We do not recommend starting work on the project before week 6, as we might make changes to it. Until then, you can prepare yourself and focus on learning topics relevant to increasing your competency to deliver the project successfully.
-```
-
-```{Note}
-Your final project solution should be submitted for assessment in Inspera. Please ensure that the virtual environment folder is NOT included in the zip file you upload. Only the requirements.txt file should be included. Additionally, make your central repository publicly accessible and share the link in Inspera.
-```
+**Prosjektet inneholder tre deler**
+| del                           | innehold                          | 
+|-------------------------------|-----------------------------------|
+| [Bakgrunn](./notebooks/miljoanalyseprosjekt.ipynb)  | Bakgrunn for prosjektet |
+| [Del 1](./notebooks/del1.ipynb) | Sett opp av utviklingsmiljø, datainnsamling, databehandling |
+| [Del 2](./notebooks/del2.ipynb) | Dataanalyse, visualisering og prediktiv analyse |
 
 
-```{important}
-To access the project template, click <a href="https://jupyterhub.apps.stack.it.ntnu.no/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgit.ntnu.no%2FTDT4114%2Fproj_environment.git&#38;urlpath=lab%2Ftree%2Fproj_environment.git%2FREADME.md&#38;branch=main">here</a> to copy source files to Jupyter Hub (NTNU). And/Or clone/download from the GitHub repository: <a href="https://git.ntnu.no/TDT4114/proj_environment">https://git.ntnu.no/TDT4114/proj_environment</a>.
-```
+### Hvordan bruke dette prosjektet?
+Disse tre notatbøkene er allerede kjørt og tar deg gjennom prosjektet ganske sømløst, uten behov for å laste ned noe eller kjøring av kode. 
+
+Prosjektet kan brukes på andre datasett men da bør du ta en titt på [requirements filen](requirements.txt) for å forsikre deg om at du får med alle de nødvendige bibliotekene
+
+### Verktøyene vi har brukt
+
+- Python 3.x
+- Jupyter Notebook
+- pandas
+- matplotlib
+- seaborn
+- numpy
+- requests
+
+### Kilder
+ Kildene som har blitt benyttet til dette prosjektet finner du enten nederst i [del 1](./notebooks/del1.ipynb) og [del 2](./notebooks/del2.ipynb) eller i README.md filene som tilhører hver mappe eller i den komplette litteraturlisten. **Les gjerne gjennom disse om du er mer interessert i hva som foregår bak notebooks-ene**
+
+ -[data](./data/README.md)
+ -[src](./src/README.md)
+ -[tests](./tests/README.md)
+ -[komplett litteraturliste](./docs/litteratur.ipynb)
+
+## Start her: [Bakgrunn](./notebooks/miljoanalyseprosjekt.ipynb)
