@@ -22,3 +22,4 @@ elementer = {
 tidsperioder = {
     "seksten": "2016-01-01/2021-01-01",  #for stasjon gløshaugen var det tilgjengelig data fra og med 2016, så det er der vi startet
 }
+

@@ -70,7 +70,23 @@ def vasket_data(filbane, dato_kolonne, output_fil="utfylt_data.csv"):
 
     #lagrer oppdatert info i ny fil 
     df_utfylt.to_csv(output_filbane, index=False)
-    print(f"\nBenyttet lineær interpolasjon, fil lagret som : {output_fil}")
-
 
     return df_utfylt
+
+'''
+OpenAI. (n.d.). *ChatGPT (GPT-4)* [Stor språkmodell]. https://chat.openai.com/
+
+Pandas (n.d.) pandas.pydata.org.
+    https://pandas.pydata.org/docs/user_guide/index.html
+    https://pandas.pydata.org/docs/user_guide/dsintro.html#dataframe
+    https://pandas.pydata.org/docs/user_guide/merging.html#concat
+
+Rouhani, M. (2019). *Applied Programming — Applied Programming.* Ntnu.no. https://rouhani.folk.ntnu.no/textbooks/tdt4114/intro.html
+
+W3Schools. (n.d.-a).  Www.w3schools.com.
+    https://www.w3schools.com/python/pandas/default.asp
+    https://www.w3schools.com/python/pandas/pandas_dataframes.asp
+    https://www.w3schools.com/python/pandas/pandas_cleaning_duplicates.asp
+    https://www.w3schools.com/python/pandas/pandas_csv.asp
+
+'''
