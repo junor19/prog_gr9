@@ -28,9 +28,9 @@ Prosjektet kan brukes på andre datasett men da bør du ta en titt på [requirem
 ### Kilder
  Kildene som har blitt benyttet til dette prosjektet finner du enten nederst i [del 1](./notebooks/del1.ipynb) og [del 2](./notebooks/del2.ipynb) eller i README.md filene som tilhører hver mappe eller i den komplette litteraturlisten. **Les gjerne gjennom disse om du er mer interessert i hva som foregår bak notebooks-ene**
 
- -[data](./data/README.md)
- -[src](./src/README.md)
- -[tests](./tests/README.md)
- -[komplett litteraturliste](./docs/litteratur.ipynb)
+ - [data](./data/README.md)
+ - [src](./src/README.md)
+ - [tests](./tests/README.md)
+ - [komplett litteraturliste](./docs/litteratur.ipynb)
 
 ## Start her: [Bakgrunn](./notebooks/miljoanalyseprosjekt.ipynb)
