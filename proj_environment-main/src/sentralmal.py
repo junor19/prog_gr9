@@ -20,3 +20,10 @@ if __name__ == "__main__":
     print("median er:", median) #summerer median
     print("gjennomsnittet er:", gjennomsnitt) # summerergjennomsnittet
     print("standardavviket er:", standardavvik) #finner standardavviket
+    
+    
+'''
+W3Schools. (n.d.-a). *Pandas median, gjennomsnitt, standardavvik.* www.w3school.com. https://www.w3schools.com/python/pandas/ref_df_median.asp
+
+openAI(n.d.-a). *Chatgpt (GPT-4).* https://chatgpt.com/
+'''
